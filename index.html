@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo">Toko<span>Hadi</span></a>
+      <a href="#home" class="logo">Togil<span>Shop</span></a>
 
       <i class="fa-solid fa-square-list" id="menu-icon"></i>
       <nav class="navbar">
@@ -34,6 +34,7 @@
           <li class="nav-link"><a href="#parts">Parts</a></li>
           <li class="nav-link"><a href="#dealer">Dealer</a></li>
           <li class="nav-link"><a href="#search">Search </a></li>
+          <li class="nav-link"><a href="#cart-section">Wishlist</a></li>
         </ul>
       </nav>
     </header>
@@ -611,9 +612,12 @@
     </section>
 
     <section id="cart-section">
-      <h2>Keranjang Belanja</h2>
-      <div id="cart"></div>
-      <h3>Total:  <span id="total-price"></span></h3>
+      <h2 class="cart-category">Keranjang Belanja</h2>
+      <div class="cart-container">
+        <p id="no-product">Tidak ada produk yang di tambahkan</p>
+        <div id="cart"></div>
+        <h3 class="total">Total:  <span id="total-price"></span></h3>
+      </div>
     </section>
 
     <script src="main.js" defer></script>
