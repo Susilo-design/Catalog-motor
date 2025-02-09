@@ -3,17 +3,24 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 function updateCart() {
   const cartContainer = document.getElementById("cart");
   const totalPriceEl = document.getElementById("total-price");
+  const noProductEl = document.getElementById("no-product");
   cartContainer.innerHTML = "";
   let totalPrice = 0;
+
+  if (cart.length === 0) {
+    noProductEl.style.display = "block";
+  } else {
+    noProductEl.style.display = "none";
+  }
 
   cart.forEach((item, index) => {
     totalPrice += item.price;
     cartContainer.innerHTML += `
-            <div class="cart-item">
-                <span>${item.name} - Rp ${item.price.toLocaleString()}</span>
-                <button onclick="removeFromCart(${index})">Hapus</button>
-            </div>
-        `;
+      <div class="cart-item">
+        <span>${item.name} - Rp ${item.price.toLocaleString()}</span>
+        <button onclick="removeFromCart(${index})" class="btn">Hapus dari Wishlist</button>
+      </div>
+    `;
   });
 
   totalPriceEl.innerText = totalPrice.toLocaleString();
