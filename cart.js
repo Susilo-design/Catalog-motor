@@ -5,7 +5,7 @@ function updateCart() {
   const totalPriceEl = document.getElementById("total-price");
   const noProductEl = document.getElementById("no-product");
   cartContainer.innerHTML = "";
-  let totalPrice = 0;
+  let totalPrice = "Rp";
 
   if (cart.length === 0) {
     noProductEl.style.display = "block";
@@ -17,7 +17,7 @@ function updateCart() {
     totalPrice += item.price;
     cartContainer.innerHTML += `
       <div class="cart-item">
-        <span>${item.name} - Rp ${item.price.toLocaleString()}</span>
+        <span>${item.name} - ${item.price.toLocaleString()}</span>
         <button onclick="removeFromCart(${index})" class="btn">Hapus dari Wishlist</button>
       </div>
     `;
@@ -27,6 +27,9 @@ function updateCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+
+
+
 function addToCart(name, price) {
   cart.push({ name, price });
   updateCart();
@@ -34,7 +37,7 @@ function addToCart(name, price) {
 
 function removeFromCart(index) {
   cart.splice(index, 1);
-  updateCart();
+  updateCart(); 
 }
 
 document.addEventListener("DOMContentLoaded", updateCart);
