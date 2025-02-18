@@ -14,7 +14,7 @@ function updateCart() {
   }
 
   cart.forEach((item, index) => {
-    totalPrice += item.price;
+    totalPrice += totalPrice;
     cartContainer.innerHTML += `
       <div class="cart-item">
         <span>${item.name} - ${item.price.toLocaleString()}</span>
