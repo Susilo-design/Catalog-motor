@@ -44,3 +44,20 @@
   height: auto;
   border-radius: 9px;
 }
+
+#search-header{
+  justify-content: center;
+  text-align: center;
+}
+
+.search input{
+  width: 50%;
+  height: 3rem;
+background-color: grey;
+}
+
+.search input::placeholder{
+  background-color:grey;
+  color: black;
+  font-size: 18px;
+}

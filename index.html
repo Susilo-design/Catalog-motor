@@ -40,14 +40,25 @@
     </header>
 
     <section id="home">
-      <button>
-        <a href="search.html">Explore Now!</a>
-      </button>
+      <div id="search-header">
+        <div class="search">
+          <h1>What You Need?</h1>
+          <input
+            type="text".
+            name=""
+            id="find"
+            placeholder="search here...."
+            onkeyup="search()"
+          />
+        </div>
+        <div>
+          <p>Cari apa yang kamu butuhkan disini untuk kendaraan mu</p>
+        </div>
     </section>
 
     <section id="motorcycle">
       <div class="motor">
-        <div class="motor-grid">
+        <div class="motor-grid" class="card">
           <div class="motor-image">
             <img
               src="asset_item/Motor/Ducati Panigale V4S.png"
@@ -468,10 +479,10 @@
               class="product-thumb"
               alt="Exhaust"
             />
-            <button class="card-btn" onclick="addToCart('Exhaust','300.00')" >add to wishlist</button>
+            <button class="card-btn" onclick="addToCart('Samlong','300.00')" >add to wishlist</button>
           </div>
           <div class="product-info">
-            <h2 class="product-brand">Exhaust</h2>
+            <h2 class="product-brand">Samlong</h2>
             <p class="product-short-description">
               Performance exhaust for enhanced engine sound.
             </p>
@@ -502,10 +513,10 @@
               class="product-thumb"
               alt="Suspension"
             />
-            <button class="card-btn" onclick="addToCart('akrapovic megaphone','250.00')" >add to wishlist</button>
+            <button class="card-btn" onclick="addToCart('Ohlins','250.00')" >add to wishlist</button>
           </div>
           <div class="product-info">
-            <h2 class="product-brand">akrapovic megaphone</h2>
+            <h2 class="product-brand">ohlins</h2>
             <p class="product-short-description">
               High-quality suspension for a smoother ride.
             </p>
@@ -609,5 +620,6 @@
 
     <script src="main.js" defer></script>
     <script src="cart.js" defer></script>
+    <script src="search.js" defer></script>
   </body>
 </html>
