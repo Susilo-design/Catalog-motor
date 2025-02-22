@@ -59,7 +59,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: 1000000000000000000;
 }
 
 .logo {
@@ -1398,4 +1398,128 @@ a {
   font-size: 2.5rem;
   font-weight: 500;
   margin: 2rem 0;
+}
+
+/*preview*/
+
+.products-preview{
+  position: fixed;
+  top:0; left:0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.preview{
+  display: none;
+  padding:2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  border-radius: 1rem;
+  margin:2rem;
+  width: 75rem;
+}
+
+.products-preview .preview.active{
+  display: inline-block;
+}
+
+ .products-preview .preview img{
+  margin-top: 4rem;
+  height: 40rem;
+}
+
+.products-preview .preview .fa-times{
+  position: absolute;
+  top:1rem; right:1.5rem;
+  cursor: pointer;
+  color:#444;
+  font-size: 5rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.products-preview .preview .fa-times:hover{
+  color: rgb(255, 25, 71);
+}
+
+.products-preview .preview h3{
+  color:#000000;
+  padding:.5rem 0;
+  font-size: 4.5rem;
+}
+
+.products-preview .preview p{
+  line-height: 1.5;
+  padding:1rem 0;
+  font-size: 1.6rem;
+  color:#777;
+}
+
+.products-preview .preview .price{
+  padding:1rem 0;
+  font-size: 3.5rem;
+  color:#000000;
+}
+
+.preview-btn {
+  padding: 10px;
+  width: 60%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #8d8d8d;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+
+.preview-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+
+/* search */
+
+.search-box {
+  width: 600px;
+  background-color: #fff;
+  margin: 200px auto 0;
+  border: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.search-box input {
+  flex: 1;
+  height: 5rem;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.result-box ul {
+  border-top: 1px solid white;
+  padding: 15px 10px;
+}
+
+.data-list {
+  list-style-type: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+}
+
+.result-box ul li:hover {
+  background-color: #2b2b2b;
+  color: white;
 }
