@@ -1417,10 +1417,11 @@ a {
   display: none;
   padding:2rem;
   text-align: center;
-  background: #fff;
+  background: #a6a3a3;
   position: relative;
   margin:2rem;
   width: 50rem;
+  border-radius: 30px;
 }
 
 .products-preview .preview.active{
