@@ -1411,7 +1411,6 @@ a {
   display: none;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
   z-index: 100000;
 }
 
@@ -1424,19 +1423,6 @@ a {
   border-radius: 1rem;
   margin:2rem;
   width: 75rem;
-=======
-}
-
-.products-preview .preview{
-  display: none;
-  padding:2rem;
-  text-align: center;
-  background: #a6a3a3;
-  position: relative;
-  margin:2rem;
-  width: 50rem;
-  border-radius: 30px;
->>>>>>> d90964d3f0d4db343a662a11d6bfad133f016b72
 }
 
 .products-preview .preview.active{
@@ -1444,12 +1430,8 @@ a {
 }
 
  .products-preview .preview img{
-<<<<<<< HEAD
   margin-top: 4rem;
   height: 40rem;
-=======
-  height: 20rem;
->>>>>>> d90964d3f0d4db343a662a11d6bfad133f016b72
 }
 
 .products-preview .preview .fa-times{
@@ -1457,7 +1439,6 @@ a {
   top:1rem; right:1.5rem;
   cursor: pointer;
   color:#444;
-<<<<<<< HEAD
   font-size: 5rem;
   transition: all 0.1s ease-in-out;
 }
@@ -1505,15 +1486,6 @@ a {
 }
 
 /* search */
-=======
-  font-size: 4rem;
-}
-
-.products-preview .preview .fa-times:hover{
-  transform: rotate(90deg);
-}
-
->>>>>>> d90964d3f0d4db343a662a11d6bfad133f016b72
 
 .search-box {
   width: 600px;
@@ -1550,9 +1522,4 @@ a {
 .result-box ul li:hover {
   background-color: #2b2b2b;
   color: white;
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> d90964d3f0d4db343a662a11d6bfad133f016b72
